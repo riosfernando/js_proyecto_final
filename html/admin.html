@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Selección de acción a realizar Administrador-->
+    <select class="form-select" aria-label="Default select example">
+        <option selected>Seleccioná el tipo de acción a realizar</option>
+        <option value="1">Buscar Producto</option>
+        <option value="2">Buscar Marca</option>
+        <option value="3">Agregar Producto</option>
+        <option value="3">Agregar Marca</option>
+    </select>
+
+    <!-- Captura de propiedades de objetos que componen el array de productos-->
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+         <li>
+           <label for="tipo">Tipo</label>
+           <input type="text" id="name" name="productType">
+         </li>
+         <li>
+           <label for="marca">Marca</label>
+           <input type="text" id="mail" name="productBrand">
+         </li>
+         <li>
+            <label for="modelo">Modelo</label>
+            <input type="text" id="name" name="productModel">
+          </li>
+          <li>
+            <label for="precio">Precio</label>
+            <input type="number" id="mail" name="productPrice">
+          </li>
+        </ul>
+    </form>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>
