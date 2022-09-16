@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+
     <!-- Selección de acción a realizar Administrador-->
     <select class="form-select" aria-label="Default select example">
         <option selected>Seleccioná el tipo de acción a realizar</option>
@@ -21,21 +22,25 @@
         <ul>
          <li>
            <label for="tipo">Tipo</label>
-           <input type="text" id="name" name="productType">
+           <input type="text" id="productType" name="productType">
          </li>
          <li>
            <label for="marca">Marca</label>
-           <input type="text" id="mail" name="productBrand">
+           <input type="text" id="productBrand" name="productBrand">
          </li>
          <li>
             <label for="modelo">Modelo</label>
-            <input type="text" id="name" name="productModel">
+            <input type="text" id="productModel" name="productModel">
           </li>
           <li>
             <label for="precio">Precio</label>
-            <input type="number" id="mail" name="productPrice">
+            <input type="number" id="productPrice" name="productPrice">
           </li>
         </ul>
+
+        <button type="submit" id="productRegister">
+          Cargar
+        </button>
     </form>
 
     <script src="../js/admin.js"></script>

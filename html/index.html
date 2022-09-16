@@ -9,11 +9,13 @@
 <body>
     
 <!-- Selector de tipo de usuario -->
-<select class="form-select" aria-label="Default select example">
+<select id="userSelector">
     <option selected>Selecciona el tipo de usuario</option>
-    <option id="adminUser" value="1">Administrador</option>
-    <option id="clientUser" value="2">Cliente</option>
+    <option id="userType" value="1">Administrador</option>
+    <option id="userType" value="2">Cliente</option>
 </select>
+
+<input type="text" placeholder="Ingresa tu nombre" id="userName">
 
 <button id="ingresar" type="submit">
     Ingresar
