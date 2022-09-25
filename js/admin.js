@@ -17,6 +17,7 @@ registerProduct.addEventListener("click", () => {
     let precio = document.getElementById("productPrice").value;
     
     const producto1 = new Producto(categoria,marca,modelo,precio);
-    productoNuevo.push(producto1)
+    productoNuevo.push(producto1);
     alert("El producto ingresado es " +JSON.stringify(producto1));
+    console.log(productoNuevo.length);
 })
