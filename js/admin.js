@@ -62,3 +62,11 @@ registerProduct.addEventListener("click", (e) => {
 
     console.log(productoNuevo.length);
 })
+
+let indexBtn = document.getElementById("indexBtn");
+
+indexBtn.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    window.location.assign('./index.html')
+});
