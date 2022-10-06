@@ -9,15 +9,16 @@
 <body>
 
     <!-- Selección de acción a realizar Administrador-->
-    <select class="form-select" aria-label="Default select example">
+    <!-- <select class="form-select" aria-label="Default select example">
         <option selected>Seleccioná el tipo de acción a realizar</option>
         <option value="1">Buscar Producto</option>
         <option value="2">Buscar Marca</option>
         <option value="3">Agregar Producto</option>
         <option value="3">Agregar Marca</option>
-    </select>
+    </select> -->
 
     <!-- Captura de propiedades de objetos que componen el array de productos-->
+  <div> 
     <form action="/my-handling-form-page" method="post">
         <ul>
          <li>
@@ -42,7 +43,23 @@
           Cargar
         </button>
     </form>
-
+  </div>
+  <div id="productlist">
+    <div><table class="table" id ="productstable">
+      <thead>
+          <tr>
+            <th scope="col">Id</th>       
+            <th scope="col">Tipo</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Precio</th>
+            <!-- <th scope="col">Sueldo</th> -->
+            <th scope="col"></th>
+          </tr>
+        </thead>
+      </table>
+  </div>
+  </div>
     <script src="../js/admin.js"></script>
 </body>
 </html>
