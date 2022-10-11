@@ -1,5 +1,3 @@
-//Me falta crear la función para mandar el objeto creado al localStorage
-
 const productos = [
 
 
@@ -12,6 +10,7 @@ function Producto(categoria, marca, modelo, precio,id) {
     this.precio = precio;
     this.id= id
 };
+
 function addProduct(categoria,marca,modelo,precio,id){
     const producto1 = new Producto(categoria,marca,modelo,precio,id);
     productos.push(producto1);
@@ -70,3 +69,24 @@ indexBtn.addEventListener("click", (e) => {
 
     window.location.assign('./index.html')
 });
+
+
+/* Borrar producto*/
+function deleteProduct(event) {
+    const btn = event.target;
+    const id = btn.id.split("_")[1];
+    food = food.filter((plate) => plate.id != id);
+    updateFoodTable();
+  }
+
+/*Editar producto*/
+  function editProduct(event) {
+    const btn = event.target;
+    const id = btn.id.split("_")[1];
+    const plato = food.filter((plate) => plate.id == id)[0];
+    foodForm.foodName.value = plato.name;
+    foodForm.foodLink.value = plato.link;
+    foodForm.foodPrice.value = plato.price;
+    foodForm["idPlate"] = plato.id;
+    console.dir(foodForm);
+  }
